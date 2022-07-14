@@ -1,0 +1,118 @@
+.delivery
+    padding-top: 40px
+    padding-bottom: 80px
+    &__image
+        width: 95%
+        margin: auto
+        background-image: url('/images/delivery-img.png')
+        height: 312px
+        background-repeat: no-repeat
+        background-size: cover
+        padding-top: 84px
+        padding-left: 100px
+        margin-bottom: 80px
+    &__title    
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 120%
+        color: #171B24
+        margin-bottom: 20px
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 150%
+        color: #2F323A
+        width: 520px
+    &-steps
+        &__title
+            font-style: normal
+            font-weight: 600
+            font-size: 34px
+            line-height: 130%
+            color: #2F323A
+            margin-bottom: 32px
+    &__steps
+        display: flex
+        justify-content: space-between
+        margin-bottom: 80px
+    &-step
+        &__image
+            margin-bottom: 12px
+            height: 80px
+        &__text
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            color: #2F323A
+    &__burger
+        width: 100%
+        padding: 80px 196px
+        border: 1px solid #D1D1D3
+    &-burger
+        &__item
+            padding: 16px 60px 16px 20px
+            background-color: $grey
+            margin-bottom: 12px
+            &:nth-last-child(1)
+                margin-bottom: 0
+        &__title
+            font-style: normal
+            font-weight: 600
+            font-size: 34px
+            line-height: 130%
+            color: #2F323A
+            margin-bottom: 20px
+        &__btn
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 136%
+            color: #2F323A
+            padding: 0
+            width: 100%
+            background-color: transparent
+            text-align: left
+            position: relative
+            
+            &::after
+                content: ''
+                width: 24px
+                height: 24px
+                position: absolute
+                background-image: url('/images/arrow-down.svg')
+                top: 0
+                right: -30px
+                transform: rotate(360deg)
+                transition: .2s
+            &--open
+                &::after
+                    content: ''
+                    width: 24px
+                    height: 24px
+                    position: absolute
+                    background-image: url('/images/arrow-down.svg')
+                    top: 0
+                    right: -30px
+                    transform: rotate(180deg)
+                    transition: .2s
+        &__text 
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 150%
+            color: #2F323A
+            padding-top: 16px
+        &__description
+            display: block
+            // padding-top: 16px
+            height: 0
+            overflow: hidden
+            transition: height .4s
+
+
+            
+
+

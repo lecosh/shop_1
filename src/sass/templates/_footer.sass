@@ -1,0 +1,55 @@
+.footer
+    background-color: #2F323A
+    padding-top: 40px
+    padding-bottom: 20px
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 40px
+        &__email
+            display: flex
+            flex-direction: column
+        &__link, &__location
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            color: #E8E9EA
+            display: flex
+            align-items: center
+        &__link > img, &__location > img
+            margin-right: 8px
+        &__logo
+            margin-bottom: 24px
+        &__link 
+            margin-bottom: 16px
+        &__item > a
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            color: #E8E9EA
+        &__item
+            margin-bottom: 12px
+            &:nth-last-child(1)
+                margin-bottom: 0
+    &-bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-top: 1px solid #5D6066
+        padding-top: 16px
+        &__pays
+            display: flex
+            align-items: center
+        &-pay
+            margin-right: 16px
+            &:nth-last-child(1)
+                margin-right: 0
+        &__copy, &__made
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            color: #D1D1D3

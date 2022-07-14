@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/vendors/nomalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
+    <title>СтройкаСтор</title>
+</head>
+<body>
+    <button class="close close--hidden"><img src="images/close.svg" alt=""></button>
+    <div class="popup popup--hidden">
+        <h2 class="popup__title">Выберите ваш город</h2>
+        <div class="input__container search__input popup__input-container">
+            <input type="text" class="search__search-input popup__input" placeholder="Поиск">
+            <button class="search__search-btn"><img src="images/search.svg" alt=""></button>
+        </div>
+        <div class="popup__cities">
+            <div class="cities-row">
+                <p class="popup__city">Москва</p>
+                <p class="popup__city">Екатеринбург</p>
+                <p class="popup__city">Челябинск</p>
+                <p class="popup__city">Уфа</p>
+                <p class="popup__city">Воронеж</p>
+            </div>
+            <div class="cities-row">
+                <p class="popup__city">Санкт-Петербург</p>
+                <p class="popup__city">Казань</p>
+                <p class="popup__city">Самара</p>
+                <p class="popup__city">Омск</p>
+                <p class="popup__city">Пермь</p>
+            </div>
+            <div class="cities-row">
+                <p class="popup__city">Новосибирск</p>
+                <p class="popup__city">Нижний Новгород</p>
+                <p class="popup__city">Ростов-на-Дону</p>
+                <p class="popup__city">Красноярск</p>
+                <p class="popup__city">Красноярск</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup__reg reg popup--hidden">
+        <form action="" class="reg__form">
+            <h2 class="reg__title">Вход</h2>
+            <label for="" class="reg__label">E-mail</label>
+            <input type="text" class="reg__input" placeholder="youmail@mail.com">
+            <label for="" class="reg__label">Пароль</label>
+            <input type="text" class="reg__input">
+            <a href="" class="reg__forgot-pass">Забыли пароль?</a>
+            <button class="reg__sign-in-btn">Войти</button>
+            <button class="reg__registr-btn">Создать учетную запись</button>
+        </form>
+    </div>
+    <header class="header">
+        <section class="header__up">
+            <div class="container">
+                <div class="up__wrapper">
+                    <a href="#" class="up__location location">
+                        <img src="images/location.svg" alt="location-icon" class="location__icon">
+                        <span class="location__city">Москва</span>
+                    </a>
+                    <nav class="up__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav-link">Бренды</a></li>
+                            <li class="nav__item"><a href="delivery.html" class="nav-link">Доставка</a></li>
+                            <li class="nav__item"><a href="#" class="nav-link">Возврат</a></li>
+                            <li class="nav__item"><a href="documentations.html" class="nav-link">Документация</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </section>
+        <section class="header__middle">
+            <div class="container">
+                <div class="middle__wrapper">
+                    <a href="index.html" class="logo-link"><img src="images/logo.svg" alt="" class="logo"></a>
+                    <div class="middle__search">
+                        <button class="btn search__catalog-btn">
+                            <div class="search__icon"></div>
+                            <p class="search__text">Каталог</p>
+                        </button>
+                        <div class="input__container search__input">
+                            <input type="text" class="search__search-input" placeholder="Поиск">
+                            <button class="search__search-btn"><img src="images/search.svg" alt=""></button>
+                        </div>
+                        <div class="search__personal-links">
+                            <a href="#" class="search__personal-link">
+                                <img src="images/profile-icon.svg" alt="profile-icon" class="personal-link__icon">
+                                <p class="personal-link__text">Профиль</p>
+                            </a>
+                            <a href="#" class="search__personal-link">
+                                <img src="images/orders-icon.svg" alt="order-icon" class="personal-link__icon">
+                                <p class="personal-link__text">Заказы</p>
+                            </a>
+                            <a href="#" class="search__personal-link">
+                                <img src="images/cart-icon.svg" alt="cart-icon" class="personal-link__icon">
+                                <p class="personal-link__text">Корзина</p>
+                            </a>
+                        </div>
+                        <button class="menu icon nav-icon-7">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="header__down">
+            <div class="container">
+                <div class="wrapper">
+                    <ul class="tabs">
+                        <li class="tabs__item"><a href="" class="tabs__link" download="">Акции</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Строительные материалы</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Керамическая плитка</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Краски</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Сантехника</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Напольные покрытия</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Инструменты</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Обои</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link">Окна</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>    
+    </header>

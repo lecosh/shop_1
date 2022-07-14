@@ -1,0 +1,188 @@
+.header
+    position: relative
+    &__up
+        background-color: $grey
+        padding: 10px 0
+        color: rgba(93, 96, 102, 1)
+    &__middle
+        padding: 16px 0
+        border-bottom: 1px solid #D1D1D3
+        z-index: 80
+        left: 0
+        right: 0
+        background-color: $light
+        &--fixed
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+    &__down
+.up
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__location
+        display: flex
+        align-items: center
+        color: inherit
+.location
+    &__icon
+        margin-right: 8px
+    &__city
+        font-style: normal
+        font-weight: 500
+        font-size: 15px
+        line-height: 145%
+.nav
+    &__list
+        display: flex
+    &__item
+        margin-right: 24px
+        font-weight: 500
+        font-size: 15px
+        line-height: 145%
+        &:last-child(1)
+            margin: 0
+        & > a
+            color: rgba(93, 96, 102, 1)
+.middle
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__search
+        display: flex
+        align-items: center
+.search
+    &__catalog
+        &-btn
+            background-color: $yellow
+            width: 144px
+            height: 48px
+            color: rgba(47, 50, 58, 1)
+            padding: 12px 21px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 16px  
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 136%
+            color: #171B24
+    &__icon
+        margin-right: 8px
+        width: 24px
+        height: 24px
+        background-image: url('/images/catalog.svg')
+    &__text 
+        margin: 0
+    &__input
+        width: 444px
+        height: 48px
+        position: relative
+        margin-right: 16px
+        border-bottom: 1px solid #D1D1D3
+        
+    &__search
+        &-input
+            background-color: $grey
+            width: 100%
+            height: 100%
+            padding-left: 16px
+            padding-right: 45px
+        &-btn
+            position: absolute
+            width: 24px
+            height: 24px
+            background-color: transparent
+            padding: 0
+            top: 12px
+            right: 16px
+    &__personal
+        &-links
+            display: flex
+            align-items: center
+            height: 48px
+        &-link
+            width: 82px
+            height: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            color: rgba(69, 73, 80, 1)
+.personal
+    &-link
+        &__icon
+            width: 24px
+            height: 24px
+        &__text
+            margin: 0
+            font-style: normal
+            font-weight: 500
+            font-size: 15px
+            line-height: 145%
+.header
+    &__down
+        border-bottom: 1px solid #D1D1D3
+        padding: 10px 0
+.tabs
+    display: flex
+    justify-content: space-between
+    &__item > a
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 150%
+        color: #454950
+.overlay
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background-color: rgba(23, 27, 36, 0.6)
+        z-index: 99
+.menu
+    background-color: transparent
+    display: none
+.nav-icon-7
+    width: 35px
+    height: 30px
+    margin: 10px 10px
+    position: relative
+    cursor: pointer
+    // display: inline-block
+.nav-icon-7 span
+    background-color: #2F323A
+    position: absolute
+    border-radius: 2px
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4)
+    width:100%
+    height: 4px
+.nav-icon-7 span:nth-child(1)
+    top:0px
+    left: 0px
+.nav-icon-7 span:nth-child(2)
+    top:13px
+    left: 0px
+.nav-icon-7 span:nth-child(3)
+    bottom:0px
+    left: 0px
+.nav-icon-7:not(.open):hover span:nth-child(1)
+    transform: scaleX(.8)
+.nav-icon-7:not(.open):hover span:nth-child(2)
+    transform: scaleX(.5)
+.nav-icon-7:not(.open):hover span:nth-child(3)
+    transform: scaleX(.8)
+.nav-icon-7.open span:nth-child(1)
+    transform: rotate(90deg)
+    top: 13PX
+.nav-icon-7.open span:nth-child(2)
+    transform: scale(0)
+    transition-duration: 50ms
+.nav-icon-7.open span:nth-child(3)
+    top: 13PX
