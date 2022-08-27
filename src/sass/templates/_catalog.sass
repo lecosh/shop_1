@@ -1,0 +1,96 @@
+.catalog
+    padding-top: 40px
+    padding-bottom: 80px
+    &-img
+        margin: auto
+        background-image: url("/images/category-img.png")
+        background-size: cover
+        background-repeat: no-repeat
+        max-width: 95%
+        height: 232px
+        margin-bottom: 80px
+    &__title
+        margin-left: 100px
+        padding-top: 84px
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 120%
+        color: #171B24
+    &__discounts
+        margin-bottom: 80px
+    &-discounts
+        &__row
+            display: flex
+            margin-bottom: 8px
+        &__link
+            height: 40px
+            background: $light
+            border: 1px solid #D1D1D3
+            padding: 8px 12px
+            font-weight: 500
+            font-size: 16px
+            line-height: 136%
+            color: #171B24
+            margin-right: 8px
+            transition: background-color .8s
+            &:hover
+                background-color: $yellow
+                border: 1px solid $yellow
+        &__row:nth-child(1) > .catalog-discounts__link:nth-last-child(1)
+            margin-right: 19px
+        &__row:nth-child(2) > .catalog-discounts__link:nth-last-child(1)
+            margin-right: 8px
+        &__row:nth-child(3) > .catalog-discounts__link:nth-last-child(1)
+            margin-right: 56px
+    &-categories
+        display: flex
+        justify-content: space-between
+        margin-bottom: 80px
+        &:nth-last-child(1)
+            margin-bottom: 0
+            
+    &-category
+        max-width: 278px
+        &__top
+            width: 180px
+            height: 180px
+            background-color: #F6F6F6
+            display: flex
+            align-items: center
+            flex-direction: column
+            margin-bottom: 20px
+        &__title
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 136%
+            text-align: center
+            color: #2F323A
+            margin-bottom: 16px
+            padding-top: 12px
+        &__img
+            height: 128px
+            width: 100%
+            object-fit: contain
+            &--rotate
+                height: 100px
+            &--walls
+                height: 110px
+                width: 70%
+                
+        &__list
+            display: flex
+            flex-direction: column
+    &-list
+        &__item
+            margin-bottom: 12px
+            & > a
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 150%
+                color: #2F323A  
+                
+            
+            

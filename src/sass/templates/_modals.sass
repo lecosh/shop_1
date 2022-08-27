@@ -1,0 +1,179 @@
+body
+    position: relative
+.modal
+    padding: 36px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $light
+    z-index: 200
+    opacity: 0
+    transition: opacity .2s
+    &-title
+        font-style: normal
+        font-weight: 600
+        font-size: 34px
+        line-height: 130%
+        text-align: center
+        color: #2F323A
+        margin-bottom: 24px
+    &-input
+        &-1
+            background: #F6F6F6
+            border-bottom: 1px solid #D1D1D3
+            padding: 12px 20px 12px 12px
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 136%
+            color: #8B8D92
+            width: 100%
+            &-container
+                display: flex
+                width: 100%
+                position: relative
+                height: 48px
+                margin-bottom: 24px
+    &-close
+        opacity: 0
+        &-btn
+            position: fixed
+            top: 20px
+            right: 20px
+            padding: 0
+            width: 52px
+            height: 52px
+            background-color: transparent
+            z-index: 200
+            cursor: pointer
+    &-open
+        opacity: 1 !important
+    &-1
+        &-wrapper
+            display: flex
+            flex-direction: column
+    &-btn
+        &-1
+            position: absolute
+            top: 12px
+            right: 16px
+            background-color: transparent
+    &-overlay
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(23, 27, 36, 0.6)
+        z-index: 199
+        opacity: 0
+        transition: opacity .2s
+    &-cities
+        display: flex
+        justify-content: space-between
+    &__city
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 150%
+        color: #2F323A
+        margin-bottom: 16px
+        cursor: pointer
+.modal
+    &-auth
+        &__input
+            width: 100%
+            background: #F6F6F6
+            border-bottom: 1px solid #D1D1D3
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 136%
+            color: #8B8D92
+            height: 48px
+            padding: 12px 16px
+        &__forget
+            &-pass
+                margin-bottom: 24px
+                font-style: normal
+                font-weight: 500
+                font-size: 15px
+                line-height: 145%
+                color: #5D6066
+        &__form
+            display: flex
+            flex-direction: column
+        &__email
+            margin-bottom: 24px
+        &__password
+            margin-bottom: 12px
+        &__sign
+            &-in
+                &-btn
+                    width: 100%
+                    background: #FCEC41
+                    height: 48px
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 136%
+                    color: #171B24
+                    margin-bottom: 12px
+                    transition: opacity .2s
+                    &:disabled
+                        opacity: .5
+        &__reg
+            &-btn
+                width: 100%
+                height: 48px
+                background: $light
+                border: 1px solid #D1D1D3
+                font-style: normal
+                font-weight: 500
+                font-size: 18px
+                line-height: 136%
+                color: #171B24
+        &__label
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            color: #2F323A
+            margin-bottom: 8px
+.modal
+    &-reg
+        &__form
+            display: flex
+            flex-direction: column
+        &-content
+            display: flex
+            justify-content: space-between
+        &-section
+            max-width: 242px
+            margin-bottom: 24px
+        &__label
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            color: #2F323A
+        &__input
+            padding: 12px 16px
+            width: 242px
+            height: 48px
+            background: #F6F6F6
+            border-bottom: 1px solid #D1D1D3
+            margin-top: 8px
+        &__register
+            height: 48px
+            background: #FCEC41
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 136%
+            color: #171B24
+            transition: opacity .2s
+            &:disabled
+                opacity: .5
+._error
+    box-shadow: 0 0 10px red

@@ -13,13 +13,15 @@
     &__catalog
         &-btn
             &:hover
-                .search__icon
-                    &:hover
-                    background-image: url('/images/catalog-light.svg')
-                    transition: .3s
                 background-color: #2F323A
                 color: $light
                 transition: .3s
+                .search__icon
+                    & > a:hover
+                    background-image: url('/images/catalog-light.svg')
+                    transition: .3s
+                & > a:hover
+                    color: $light
             &:active
                 color: #D1D1D3
                 transition: .3s
