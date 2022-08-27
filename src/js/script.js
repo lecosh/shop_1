@@ -1,50 +1,3 @@
-const closePopUp = () =>{
-    const closePopup = document.querySelector('.close')
-    const popUps = document.querySelectorAll('.popup')
-    const body = document.querySelector('body')
-    closePopup.addEventListener('click', ()=>{
-        console.log(123);
-        popUps.forEach(item=>{
-            if (!item.classList.contains('popup--hidden')){
-                item.classList.add('popup--hidden')
-                body.classList.toggle('overlay')
-                closePopup.classList.toggle('close--hidden')
-            }
-        })
-    })
-}
-
-const popupCityOpen = () =>{
-    const city = document.querySelector('.location__city')
-    const body = document.querySelector('body')
-    const popup = document.querySelector('.popup')
-    const closePopup = document.querySelector('.close')
-    city.addEventListener('click', ()=>{
-        body.classList.toggle('overlay')
-        popup.classList.toggle('popup--hidden')
-        closePopup.classList.toggle('close--hidden')
-    })
-    // closePopup.addEventListener('click', closePopUp())
-    
-    const cities = document.querySelectorAll('.popup__city')
-    cities.forEach(city =>{
-        city.addEventListener('click', ()=>{
-            document.querySelector('.location__city').innerHTML = city.innerHTML;
-        })
-    })
-}
-const popupRegOpen = () =>{
-    const profileLink = document.querySelector('.search__personal-link')
-    const popupReg = document.querySelector('.reg')
-    const body = document.querySelector('body')
-    const closePopup = document.querySelector('.close')
-    profileLink.addEventListener('click', ()=>{
-        body.classList.toggle('overlay')
-        popupReg.classList.toggle('popup--hidden')
-        closePopup.classList.toggle('close--hidden')
-    })
-    // closePopup.addEventListener('click', closePopUp())
-}
 const deliveryBurger = () =>{
     const deliveryItems = document.querySelectorAll('.delivery-burger__btn')
     const close = (index) =>{
@@ -73,7 +26,4 @@ const deliveryBurger = () =>{
         })
     })
 }
-popupCityOpen();
-popupRegOpen();
-closePopUp();
 deliveryBurger();

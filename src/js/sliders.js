@@ -11,6 +11,7 @@ const specialSlider = new Swiper('.special-slider', {
 const reviewslSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
+  speed: 100,
   slidesPerView: 2,
   // Navigation arrows
   navigation: {
@@ -18,7 +19,8 @@ const reviewslSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider-btn-prev',
   },
   breakpoints: {
-    576:
-    slidesPerView: 1
-  }
+    576: {
+      slidesPerView: 1
+    }
+  },
 });
